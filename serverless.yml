@@ -29,7 +29,7 @@ functions:
     iamRoleStatements:
       - Effect: "Allow"
         Action:
-          - "dynamodb:GetItem",
+          - "dynamodb:GetItem"
         Resource: !GetAtt PostsTable.Arn
   createPost:
     handler: api.createPost
@@ -43,7 +43,7 @@ functions:
     iamRoleStatements:
       - Effect: "Allow"
         Action:
-          - "dynamodb:PutItem",
+          - "dynamodb:PutItem"
         Resource: !GetAtt PostsTable.Arn      
   updatePost:
     handler: api.updatePost
@@ -57,7 +57,7 @@ functions:
     iamRoleStatements:
       - Effect: "Allow"
         Action:
-          - "dynamodb:UpdateItem",
+          - "dynamodb:UpdateItem"
         Resource: !GetAtt PostsTable.Arn      
   deletePost:
     handler: api.deletePost
@@ -71,7 +71,7 @@ functions:
     iamRoleStatements:
       - Effect: "Allow"
         Action:
-          - "dynamodb:DeleteItem",
+          - "dynamodb:DeleteItem"
         Resource: !GetAtt PostsTable.Arn      
   getAllPosts:
     handler: api.getAllPosts
