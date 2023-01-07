@@ -98,7 +98,7 @@ resources:
           - AttributeName: postId
             AttributeType: S
         KeySchema:
-          - AttributeName: postiD
+          - AttributeName: postId
             KeyType: HASH
         ProvisionedThroughput:
           ReadCapacityUnits: 1
