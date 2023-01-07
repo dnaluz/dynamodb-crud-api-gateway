@@ -47,7 +47,7 @@ functions:
         Resource: !GetAtt PostsTable.Arn      
   updatePost:
     handler: api.updatePost
-    name: create-post
+    name: update-post
     memorySize: 128
     timeout: 5    
     events: 
