@@ -1,4 +1,5 @@
-const db = require("./db");
+import { client } from "db";
+
 const {
     GetItemCommand,
     PutItemCommand,
