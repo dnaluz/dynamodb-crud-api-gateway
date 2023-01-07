@@ -85,7 +85,7 @@ functions:
     iamRoleStatements:
       - Effect: "Allow"
         Action:
-          - "dynamodb:Scan",
+          - "dynamodb:Scan"
         Resource: !GetAtt PostsTable.Arn    
 
 resources: 
