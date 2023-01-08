@@ -1,4 +1,4 @@
-import { client as db } from "./db";
+import { client as db } from "./db.js";
 
 import {
   GetItemCommand,
